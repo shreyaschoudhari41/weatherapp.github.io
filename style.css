@@ -1,15 +1,29 @@
 *{
     margin: 0;
     padding: 0;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
 }
 .container{
     background-color: rgb(166, 212, 243);
-    max-width: 50%;
+    max-width: none;
     margin: 20px auto;
     padding: 20px 0;
 }
+.location{
+    mix-blend-mode: hard-light;
+    width: 4vw;
+    height: 4vw;
+    /* margin-top: ; */
+}
 .input,.result{
     margin: 5px 10vw;
+}
+.cityname{
+    display: flex;
+    justify-content:left;
 }
 .input{
     display:grid;
@@ -22,6 +36,10 @@
     padding: 5px 5px;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: wheat;
+    border-width: 2px;
+    color: aliceblue;
+
 }
 .submit{
     margin: 10px 30px ;
@@ -30,44 +48,35 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
     max-width:70vw;
-    background-color: rgb(255, 188, 80);
-    border-width: 0px;
-    border-radius: 4px;
+    color: rgb(255, 188, 80);
+    border-width: 3px;
+    border-color: rgb(133, 131, 130);
+    border-radius: 15px;
     cursor: pointer;
 }
 .result{
-    text-align: center;
+    color: azure;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+.otherinfo{
+    margin-left: 5vw;
+    font-size: 2vw;
 }
 .name{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
+    font-size: 3.5vw;
 }
-.position{
-    font-size: 20px;
-}
-.temp,.humidity,.desc{
+.temp,.humidity,.desc,.groundlevel{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25px;
     margin-top: 10px;
 }
-.temp{
-    margin-top: 20px;
+.visible{
+    opacity: 0;
 }
-
-@keyframes example {
-    from {background-color: rgb(166, 212, 243);}
-    to {background-color: rgb(255, 143, 167);}
-}
-.animate {
-    animation-name: example;
-    animation-duration: 5s;
-}
-@media screen and (max-width:1020px) {
 *{
-    background-color: rgb(166, 212, 243);
-}
-.container{
-    max-width: none;
+    background-color: black;
 }
 .input{
     margin: 5px auto;
@@ -75,9 +84,20 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    
 }
 .input_text{
     background-color: antiquewhite;
 }
+@media screen and (max-width : 1150px) {
+.name{
+    font-size: 6.5vw;
+}
+.cityname img{
+    height: 30px;
+    width: 30px;
+}
+.otherinfo{
+    font-size: 4.3vw;
+}
+
 }
