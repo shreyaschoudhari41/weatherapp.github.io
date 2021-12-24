@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: rgb(166, 212, 243);
+    max-width: 50%;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+.input,.result{
+    margin: 5px 10vw;
+}
+.input{
+    display:grid;
+}
+.input_text{
+    border-width: 0px;
+    border-radius: 5px;
+    height: 30px;
+    left: 50%;
+    padding: 5px 5px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.submit{
+    margin: 10px 30px ;
+    margin-top: 20px;
+    padding: 3px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    max-width:70vw;
+    background-color: rgb(255, 188, 80);
+    border-width: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.result{
+    text-align: center;
+}
+.name{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+.position{
+    font-size: 20px;
+}
+.temp,.humidity,.desc{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.temp{
+    margin-top: 20px;
+}
+
+@keyframes example {
+    from {background-color: rgb(166, 212, 243);}
+    to {background-color: rgb(255, 143, 167);}
+}
+.animate {
+    animation-name: example;
+    animation-duration: 5s;
+}
+@media screen and (max-width:1020px) {
+*{
+    background-color: rgb(166, 212, 243);
+}
+.container{
+    max-width: none;
+}
+.input{
+    margin: 5px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.input_text{
+    background-color: antiquewhite;
+}
+}
