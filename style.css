@@ -1,13 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    background-image: url('bg.jpg');
+    /* background-image: url('bg.jpg');
     background-repeat: no-repeat;
     /* background-position: center; */
-    background-size: cover;
+    /* background-size: cover; */
 }
 .container{
-    background-color: rgb(166, 212, 243);
     max-width: none;
     margin: 20px auto;
     padding: 20px 0;
@@ -84,9 +83,6 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-}
-.input_text{
-    background-color: antiquewhite;
 }
 @media screen and (max-width : 1150px) {
 .name{
